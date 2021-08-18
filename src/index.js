@@ -200,10 +200,7 @@ export function timeChart(selector, dataSource, displayedData, options) {
       .attr('x', (d) => x(d.date))
       .attr('width', x.bandwidth())
       .attr('y', (d) => y(_.get(d, pathToYField)))
-      .attr('height', (d) => {
-        console.log(height, d, pathToYField, _.get(d, pathToYField), y(_.get(d, pathToYField)))
-        return height - y(_.get(d, pathToYField))
-      })
+      .attr('height', (d) => height - y(_.get(d, pathToYField)))
       .attr('class', 'bar')
       .attr('fill', '#28a745')
       .on('mouseover', mouseover)

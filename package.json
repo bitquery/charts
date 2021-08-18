@@ -1,7 +1,7 @@
 {
-  "name": "@bitquery/ide-charts",
-  "version": "2.0.4",
-  "description": "widgets library for ide",
+  "name": "@bitquery/charts",
+  "version": "1.0.0",
+  "description": "widgets library",
   "main": "dist/index.js",
   "scripts": {
     "dev": "webpack -w",

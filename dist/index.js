@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["ideCharts"] = factory();
+		exports["charts"] = factory();
 	else
-		root["ideCharts"] = factory();
+		root["charts"] = factory();
 })(self, function() {
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
@@ -46397,7 +46397,6 @@ function timeChart(selector, dataSource, displayedData, options) {
     }).attr('width', x.bandwidth()).attr('y', function (d) {
       return y(lodash.get(d, pathToYField));
     }).attr('height', function (d) {
-      console.log(height, d, pathToYField, lodash.get(d, pathToYField), y(lodash.get(d, pathToYField)));
       return height - y(lodash.get(d, pathToYField));
     }).attr('class', 'bar').attr('fill', '#28a745').on('mouseover', mouseover).on('mousemove', mousemove).on('mouseout', mouseout);
     svg.append('text').attr('transform', 'translate(' + width / 2 + ' ,' + (height + margin.top + 20) + ')').style('text-anchor', 'middle').style('font-size', '12').attr('font-family', 'Nunito, Arial, sans-serif').text(pathToDate);
