@@ -1,10 +1,10 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+//
 // const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-
+//
 // const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
@@ -29,20 +29,6 @@ module.exports = {
             amd: 'jquery',
             var: '$',
         },
-        react: {
-            root: "React",
-            commonjs2: "react",
-            commonjs: "react",
-            amd: "react",
-            umd: "react",
-        },
-        "react-dom": {
-            root: "ReactDOM",
-            commonjs2: "react-dom",
-            commonjs: "react-dom",
-            amd: "react-dom",
-            umd: "react-dom",
-        }
     },
 
     // plugins: [
@@ -55,7 +41,7 @@ module.exports = {
             {
                 test: /.(js|jsx)$/,
                 include: path.resolve(__dirname, 'src'),
-                exclude: path.resolve(__dirname, 'src/reactComponents/timeChartRenderer.js'),
+                // exclude: path.resolve(__dirname, 'src/reactComponents/timeChartRenderer.js'),
                 loader: 'babel-loader',
             },
             {
