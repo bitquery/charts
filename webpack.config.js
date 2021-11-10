@@ -19,7 +19,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         library: 'charts',
         libraryTarget: 'umd',
-        globalObject: 'this',
+        // globalObject: 'this',
     },
 
     externals: {

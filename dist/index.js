@@ -7,7 +7,7 @@
 		exports["charts"] = factory();
 	else
 		root["charts"] = factory();
-})(this, function() {
+})(self, function() {
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -27,7 +27,7 @@ return /******/ (() => { // webpackBootstrap
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "svg g.tick line{opacity:0.1}svg g.tick:nth-of-type(1) .y-axis-grid{opacity:1}svg path.domain{display:none}.tooltip{position:absolute;border:1px solid rgba(0,0,0,0.125);border-radius:5px;padding:10px;background:white;pointer-events:none}.tooltip ul{font-size:12px;margin:0;padding:0;list-style:none;color:black}.tooltip ul li{white-space:nowrap}.overlay{fill:none;pointer-events:all}.focus circle{fill:#ff7b00}\n", "",{"version":3,"sources":["webpack://./src/style.scss"],"names":[],"mappings":"AAAA,gBACE,WAAY,CACb,uCAGC,SAAU,CACX,gBAGC,YAAa,CACd,SAGC,iBAAkB,CAClB,kCAAsC,CACtC,iBAAkB,CAClB,YAAa,CACb,gBAAiB,CACjB,mBAAoB,CANtB,YASI,cAAe,CACf,QAAS,CACT,SAAU,CACV,eAAgB,CAChB,WAAY,CAbhB,eAeM,kBAAmB,CACpB,SAKH,SAAU,CACV,kBAAmB,CACpB,cAGC,YAAsB","sourcesContent":["svg g.tick line {\n  opacity: 0.1;\n}\n\nsvg g.tick:nth-of-type(1) .y-axis-grid {\n  opacity: 1;\n}\n\nsvg path.domain {\n  display: none;\n}\n\n.tooltip {\n  position: absolute;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 5px;\n  padding: 10px;\n  background: white;\n  pointer-events: none;\n  // transition: all 0.2s ease-out;\n  ul {\n    font-size: 12px;\n    margin: 0;\n    padding: 0;\n    list-style: none;\n    color: black;\n    li {\n      white-space: nowrap;\n    }\n  }\n}\n\n.overlay {\n  fill: none;\n  pointer-events: all;\n}\n\n.focus circle {\n  fill: rgb(255, 123, 0);\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "svg g.tick line{opacity:.1}svg g.tick:nth-of-type(1) .y-axis-grid{opacity:1}svg path.domain{display:none}.tooltip{position:absolute;border:1px solid rgba(0,0,0,.125);border-radius:5px;padding:10px;background:#fff;pointer-events:none}.tooltip ul{font-size:12px;margin:0;padding:0;list-style:none;color:#000}.tooltip ul li{white-space:nowrap}.overlay{fill:none;pointer-events:all}.focus circle{fill:#ff7b00}", "",{"version":3,"sources":["webpack://./src/style.scss"],"names":[],"mappings":"AAAA,gBACE,UAAA,CAGF,uCACE,SAAA,CAGF,gBACE,YAAA,CAGF,SACE,iBAAA,CACA,iCAAA,CACA,iBAAA,CACA,YAAA,CACA,eAAA,CACA,mBAAA,CAEA,YACE,cAAA,CACA,QAAA,CACA,SAAA,CACA,eAAA,CACA,UAAA,CACA,eACE,kBAAA,CAKN,SACE,SAAA,CACA,kBAAA,CAGF,cACE,YAAA","sourcesContent":["svg g.tick line {\n  opacity: 0.1;\n}\n\nsvg g.tick:nth-of-type(1) .y-axis-grid {\n  opacity: 1;\n}\n\nsvg path.domain {\n  display: none;\n}\n\n.tooltip {\n  position: absolute;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 5px;\n  padding: 10px;\n  background: white;\n  pointer-events: none;\n  // transition: all 0.2s ease-out;\n  ul {\n    font-size: 12px;\n    margin: 0;\n    padding: 0;\n    list-style: none;\n    color: black;\n    li {\n      white-space: nowrap;\n    }\n  }\n}\n\n.overlay {\n  fill: none;\n  pointer-events: all;\n}\n\n.focus circle {\n  fill: rgb(255, 123, 0);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
