@@ -7,7 +7,7 @@
 		exports["charts"] = factory();
 	else
 		root["charts"] = factory();
-})(self, function() {
+})(this, function() {
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -46333,6 +46333,8 @@ function timeChart(selector, dataSource, displayedData, options) {
   var pathToYField = options.y.field;
   data.forEach(function (d) {
     d.date = new Date(moment_default()(lodash.get(d, pathToDate)));
+
+    lodash.set(d, pathToYField, Number(lodash.get(d, pathToYField)));
   });
   var dt = {
     ms: (data[data.length - 1].date - data[0].date) / (data.length > 2 ? data.length - 2 : data.length),
